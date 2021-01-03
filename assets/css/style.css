@@ -1,6 +1,6 @@
 /* --- General Settings --- */
 
-h1, body {
+h1, h2, h4, body {
     margin: 0;
     padding: 0;
 }
@@ -15,6 +15,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero_image.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-flow: column;
@@ -80,8 +81,53 @@ nav > img {
 }
 
 nav > ion-icon {
-    color: white;
+    color: #ecf0f1;
     height: 3rem;
     margin: 5px 15px 0 auto;
     width: 3rem;
+}
+
+/* --- Section Features --- */
+
+.section-features {
+    background-color: #ecf0f1;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
+
+.section-features hr {
+    width: 50%;
+    border: 1px solid #d35400;
+    margin-bottom: 20px;
+}
+
+.section-features h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-features h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+
+.section-features p {
+    font-weight: 300;
+}
+
+.section-features ion-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-bottom: 15px;
+    color: #d35400;
+}
+
+.section-features > div {
+    margin-bottom: 20px;
 }
