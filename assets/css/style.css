@@ -32,7 +32,7 @@ header {
     width: 70%;
     height: 500px;
     margin-bottom: auto;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .slogan-container h1 {
@@ -107,7 +107,7 @@ nav > ion-icon {
 .section-features h2 {
     font-weight: 300;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 10px;
 }
 
@@ -130,4 +130,167 @@ nav > ion-icon {
 
 .section-features > div {
     margin-bottom: 20px;
+}
+
+/* --- Section Testimonials --- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/testimonials_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-repeat: repeat-x; */
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    color: #ecf0f1;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.section-testimonials h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-testimonials hr {
+    width: 50%;
+    border: 1px solid #d35400;
+    margin-bottom: 20px;
+}
+
+.section-testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.section-testimonials blockquote {
+    font-weight: 200;
+    text-align: left;
+    font-style: italic;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    height: 45px;
+    margin-left: -8px;
+}
+
+.section-testimonials cite {
+    padding-left: 40px;
+}
+
+[class^="section-testimonials-"] {
+    margin-bottom: 30px;
+}
+
+.testimonial-names {
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+/* --- Section Register --- */
+
+.section-register {
+    background-color: #ecf0f1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.section-register h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+form {
+    border: 3px solid #d35400;
+    border-radius: 40px;
+    font-weight: 400;
+    font-size: 1.0rem;
+    margin-bottom: 75px;
+    margin-top: 45px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 30px 20px;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+#name, #email, #password {
+    width: 80%;
+    margin-bottom: 45px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+form label {
+    margin-bottom: 18px;
+}
+
+/* .form-btn {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin-bottom: 20px;
+} */
+
+.form-btn-full {
+    background-color: #d35400;
+    color: #ecf0f1;
+    border: none;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 300;
+    height: 40px;
+    width: 90px;
+    border-radius: 200px;
+    margin-right: 40px;
+}
+
+.form-btn-full:hover {
+    background-color: #883600;
+    border-color: #883600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.form-btn-ghost {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #d35400;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 300;
+    height: 40px;
+    width: 110px;
+    border-radius: 200px;
+}
+
+.form-btn-ghost:hover {
+    background-color: #883600;
+    border-color: #883600;
+    color: #ecf0f1;
+    transition: 0.3s ease-in-out;
+}
+
+#name:focus, #email:focus, #password:focus {
+    border-color: #d35400;
 }

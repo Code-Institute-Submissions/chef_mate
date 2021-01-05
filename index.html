@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -44,6 +44,56 @@
             <h4>No hour limit</h4>
             <p>Each lesson has no limit of hours, so book as many hours as you want. Each hour only costs £30.</p>
         </div>
+    </section>
+
+    <section class="section-testimonials">
+        <h2>What our customers are saying</h2>
+        <hr>
+        <div class="section-testimonials-stephan-meyers">
+            <blockquote>I'm currently studying Culinary Arts and the tips I got from Chef Mate have really helped me. 
+                        My dishes are tastier and my grades have improved.
+            </blockquote>
+            <cite><img src="assets/images/stephan_meyers.jpg" alt="Picture of Stephan Meyers"><span class="testimonial-names">Stephan Meyers</span></cite>
+        </div>
+        <div class="section-testimonials-yin-parker">
+            <blockquote>I absolutely love cooking with my partner and Chef Mate is a great way for both of us to learn new skills and tips. It makes
+                        our time in the kitchen even more fun! 
+            </blockquote>
+            <cite><img src="assets/images/yin_parker.jpg" alt="Picture of Yin Parker"><span class="testimonial-names">Yin Parker</span></cite>
+        </div>
+        <div class="section-testimonials-tanya-stevens">
+            <blockquote>I really enjoy preparing nutricious meals, but the reality is I have a very time-consuming job, so I can't spend too much time
+                        in the kitchen. However, thanks to these amazing chefs, I've learned how to prepare quick, yet delicious and nutricious meals!
+            </blockquote>
+            <cite><img src="assets/images/tanya_stevens.jpg" alt="Picture of Tanya Stevens"><span class="testimonial-names">Tanya Stevens</span></cite>
+        </div>
+        <div class="section-testimonials-yohav-bloomberg">
+            <blockquote>It was my girlfriend's birthday, so I really wanted to impress her with a romantic dinner. A couple of hours with a chef was all
+                        I needed to prepare a great meal, just before she arrived home. 
+            </blockquote>
+            <cite><img src="assets/images/yohav_bloomberg.jpg" alt="Picture of Yohav Bloomberg"><span class="testimonial-names">Yohav Bloomberg</span></cite>
+        </div>
+    </section>
+
+    <section class="section-register">
+
+        <h2>Start your lessons today!</h2>
+
+        <form>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email address" required>
+
+            <label for="password">Password (8 characters minimum)</label>
+            <input type="password" name="password" id="password" minlength="8" placeholder="Please type a password in" required>
+            <div class="form-btn">
+                <input type="submit" value="Register" class="form-btn-full">
+                <input type="reset" value="Reset Form" class="form-btn-ghost">
+            </div>
+        </form>
+
     </section>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 </body>
