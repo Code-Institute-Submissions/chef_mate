@@ -29,10 +29,9 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 70%;
-    height: 500px;
     margin-bottom: auto;
-    margin-top: auto;
+    margin-top: 20%;
+    width: 70%;
 }
 
 .slogan-container h1 {
@@ -71,10 +70,10 @@ header {
 .nav-container {
     display: flex;
     justify-items: flex-start;
-    height: 120px;
     padding-top: 10px;
     width: 100%;
     margin-top: 10px;
+    height: 127px;
 }
 
 .logo-white, .logo-black {
@@ -94,14 +93,42 @@ nav > ion-icon {
     display: none;
 }
 
+.nav-links-container {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.nav-links:link, .nav-links:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.nav-links {
+    margin: 10px 0;
+}
+
+.js--nav-links-container-show {
+    display: flex;
+}
+
+.js--icon-display-none {
+    display: none;
+}
+
+.js--icon-display-block {
+    display: block;
+}
+
 /* --- Navigation Bar Sticky --- */
 
 .sticky-nav {
     background-color: #fafafa;
     display: flex;
     justify-items: flex-start;
-    height: 80px;
-    padding-top: 10px;
+    padding-top: 0px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -109,6 +136,7 @@ nav > ion-icon {
     z-index: 1;
     box-shadow: 0 2px 2px rgb(95, 95, 95);
     margin-top: 0;
+    max-height: 127px;
 }
 
 .sticky-nav .logo-black {
@@ -117,13 +145,24 @@ nav > ion-icon {
     height: 70px;
 }
 
+.img-container {
+    display: flex;
+    align-self: center;
+}
+
 .sticky-nav .logo-white {
     display: none;
 }
 
 .sticky-nav .menu-icon {
     color: black;
-    margin: 6px 20px 0 auto;
+    margin: auto 20px auto auto;
+}
+
+.sticky-nav .nav-links:link, .sticky-nav .nav-links:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
 
 /* --- Section Features --- */
@@ -132,6 +171,7 @@ nav > ion-icon {
     background-color: #fafafa;
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
     text-align: center;
     padding: 0 10px;
     letter-spacing: 1px;
@@ -387,7 +427,7 @@ footer {
 
 @media screen and (min-width: 768px) {
     .slogan-container {
-        margin-top: auto;
+        margin-top: 33%;
     }
 
     .slogan-container h1 {
@@ -441,11 +481,116 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
+
+    .slogan-container {
+        margin-top: 43%;
+    }
+
     .nav-container {
         margin-top: 30px;
     }
 
     .sticky-nav {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-container {
+        padding-top: 0;
+    }
+
+    .nav-links-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 3% 0 auto;
+        width: 40%;
+    }
+
+    .logo-white {
+        margin-left: 37%;
+    }
+
+    .nav-links {
+        border-bottom: 2px solid transparent;
+        padding-bottom: 4px;
+    }
+
+    .nav-links:link, .nav-links:visited {
+        font-weight: 600;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .slogan-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: auto;
+        width: 100%;
+        margin-top: 12%;
+    }
+
+    .slogan-container h1 {
+        font-size: 270%;
+        font-weight: 400;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        text-transform: uppercase;
+        color: #fafafa;
+        margin-left: 5%;
+    }
+
+    .btn {
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    
+    .section-features-grid {
+        display: inline-grid;
+        gap: 20px;
+        grid-template-rows: 400px;
+        grid-template-columns: repeat(4, 222px);
+    }
+
+    .section-features-one {
+        grid-row: 1;
+        grid-column: 1;
+        border: 1px solid black;
+    }
+
+    .section-features-two {
+        grid-row: 1;
+        grid-column: 2;
+        border: 1px solid black;
+    }
+
+    .section-features-three {
+        grid-row: 1;
+        grid-column: 3;
+        border: 1px solid black;
+    }
+
+    .section-features-four {
+        grid-row: 1;
+        grid-column: 4;
+        border: 1px solid black;
+    }
+
+    [class^="section-features-"] {
+        margin-bottom: 0;
+    }
+
+    .section-features-one, .section-features-two, .section-features-three, .section-features-four {
+        margin-bottom: 0;
+    }
+
+    .section-features {
+        text-align: left;
     }
 }
