@@ -18,8 +18,11 @@ $(document).ready(function() {
 
 });
 
+/* Responsive Menu */
+
 function menuFunction() {
     document.getElementById('nav-links-container').classList.toggle('js--nav-links-container-show');
     document.getElementById('js--menu-icon').classList.toggle('js--icon-display-none');
     document.getElementById('js--menu-icon-close').classList.toggle('js--icon-display-block');
 }
+

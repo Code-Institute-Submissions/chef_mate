@@ -1,5 +1,16 @@
 /* --- General Settings --- */
 
+html {
+    scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 150px;
+    margin: -100px 0 0;
+}
+
 h1, h2, h4, p, body {
     margin: 0;
     padding: 0;
@@ -223,11 +234,11 @@ nav > ion-icon {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    /* background-repeat: repeat-x; */
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-items: center;
+    justify-content: center;
+    align-content: center;
     color: #fafafa;
     letter-spacing: 1px;
     padding: 0 10px;
@@ -510,11 +521,11 @@ footer {
         justify-content: space-around;
         align-items: center;
         margin: 0 3% 0 auto;
-        width: 40%;
+        width: 30%;
     }
 
     .logo-white {
-        margin-left: 37%;
+        margin-left: 46%;
     }
 
     .nav-links {
@@ -526,6 +537,11 @@ footer {
         font-weight: 600;
         font-size: 1.1rem;
         letter-spacing: 1px;
+    }
+
+    .nav-links:hover, .nav-links:active {
+        border-bottom-color: #d35400;
+        transition: 0.3s ease-in;
     }
 
     .slogan-container {
@@ -554,43 +570,145 @@ footer {
     .section-features-grid {
         display: inline-grid;
         gap: 20px;
-        grid-template-rows: 400px;
+        grid-template-rows: 360px;
         grid-template-columns: repeat(4, 222px);
+        margin-top: 20px;
+        margin-bottom: 8px;
     }
 
     .section-features-one {
         grid-row: 1;
         grid-column: 1;
-        border: 1px solid black;
+        margin-bottom: 0;
+        padding: 0 10px;
     }
 
     .section-features-two {
         grid-row: 1;
         grid-column: 2;
-        border: 1px solid black;
+        margin-bottom: 0;
+        padding: 0 10px;
     }
 
     .section-features-three {
         grid-row: 1;
         grid-column: 3;
-        border: 1px solid black;
+        margin-bottom: 0;
+        padding: 0 10px;
     }
 
     .section-features-four {
         grid-row: 1;
         grid-column: 4;
-        border: 1px solid black;
-    }
-
-    [class^="section-features-"] {
         margin-bottom: 0;
-    }
-
-    .section-features-one, .section-features-two, .section-features-three, .section-features-four {
-        margin-bottom: 0;
+        padding: 0 10px;
     }
 
     .section-features {
         text-align: left;
+    }
+
+    .section-testimonials-grid {
+        display: inline-grid;
+        gap: 20px;
+        grid-template-rows: 360px 360px;
+        grid-template-columns: 450px 450px;
+        justify-content: center;
+        margin: 10px 0 60px 0;
+    }
+
+    .section-testimonials-stephan-meyers {
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 0;
+        border: 1px solid #fafafa;
+        box-shadow: 4px 5px 2px rgb(75, 74, 74);
+    }
+
+    .section-testimonials-yin-parker {
+        grid-row: 2;
+        grid-column: 1;
+        margin-bottom: 0;
+        border: 1px solid #fafafa;
+        box-shadow: 4px -5px 2px rgb(75, 74, 74);
+    }
+
+    .section-testimonials-tanya-stevens {
+        grid-row: 1;
+        grid-column: 2;
+        margin-bottom: 0;
+        border: 1px solid #fafafa;
+        box-shadow: -4px 5px 2px rgb(75, 74, 74);
+    }
+
+    .section-testimonials-yohav-bloomberg {
+        grid-row: 2;
+        grid-column: 2;
+        margin-bottom: 0;
+        border: 1px solid #fafafa;
+        box-shadow: -4px -5px 2px rgb(75, 74, 74);
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .logo-white {
+        margin-left: 57%;
+    }
+    .section-features-grid {
+        grid-template-columns: repeat(4, 250px);
+        gap: 40px;
+    }
+
+    .section-testimonials-grid {
+        grid-template-rows: 320px 320px;
+        grid-template-columns: 600px 600px;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1824px) {
+    .slogan-container h1 {
+        font-size: 4rem;
+    }
+
+    .logo-white {
+        margin-left: 85%;
+    }
+
+    .section-features-one, .section-features-two, .section-features-three, .section-features-four {
+        padding: 0 20px;
+    }
+
+    .section-features-grid {
+        grid-template-columns: repeat(4, 300px);
+        gap: 80px;
+    }
+
+    .section-testimonials-grid {
+        gap: 80px;
+    }
+
+    .section-testimonials-stephan-meyers {
+        box-shadow: 8px 10px 4px rgb(75, 74, 74);
+    }
+
+    .section-testimonials-yin-parker {
+        box-shadow: 8px -10px 4px rgb(75, 74, 74);
+    }
+
+    .section-testimonials-tanya-stevens {
+        box-shadow: -8px 10px 4px rgb(75, 74, 74);
+    }
+
+    .section-testimonials-yohav-bloomberg {
+        box-shadow: -8px -10px 4px rgb(75, 74, 74);
+    }
+
+    form {
+        width: 40%;
     }
 }
