@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>ChefMate</title>
 </head>
 <body>
 
     <header id="intro">
         <nav class="nav-container">
-            <a href="#section-register"><img src="assets/images/logo_white.png" alt="ChefMate Logo" class="logo-white"></a>
+            <img src="assets/images/logo_white.png" alt="ChefMate Logo" class="logo-white">
             <a class="img-container" href="#intro"><img src="assets/images/logo_black.png" alt="ChefMate Logo" class="logo-black"></a>
             <div class="nav-links-container" id="nav-links-container">
-                <a href="#section-features" class="nav-links">What?</a>
-                <a href="#section-testimonials" class="nav-links">Who?</a>
-                <a href="#section-register" class="nav-links">How?</a>
+                <a href="#section-features" class="nav-links">Our service</a>
+                <a href="#section-testimonials" class="nav-links">Reviews</a>
+                <a href="#section-register" class="nav-links">Register</a>
             </div>
             <ion-icon name="menu" class="menu-icon" id="js--menu-icon" onclick="menuFunction()"></ion-icon>
             <ion-icon name="close" class="menu-icon js--icon-display-none" id="js--menu-icon-close" onclick="menuFunction()"></ion-icon>
@@ -29,13 +30,15 @@
     </header>
 
     <section class="section-features js--section-features" id="section-features">
-        <h2>Get top cooking tips from our Chefs</h2>
+        <h2>Get cooking tips from skilled Chefs</h2>
+        <p class="summary">Hi! We're ChefMate, a service that helps you to develop your cooking skills with great chefs in the comfort of your own home!</p>
         <hr>
         <div class="section-features-grid">
             <div class="section-features-one">
                 <ion-icon name="star"></ion-icon>
-                <h4>Get lessons from industry recognized Chefs</h4>
-                <p>At ChefMate we make sure that all our Chefs are accredited and have valueable experience in high rated restaurants.</p>
+                <h4>Get lessons from world recognized Chefs</h4>
+                <p>At ChefMate we make sure that all our Chefs are accredited and have valueable experience in high rated restaurants. 
+                   Their culinary input is highly prized in various parts of the globe.</p>
             </div>
             <div class="section-features-two">
                 <ion-icon name="restaurant"></ion-icon>
@@ -44,14 +47,48 @@
             </div>
             <div class="section-features-three">
                 <ion-icon name="laptop-outline"></ion-icon>
-                <h4>Learn at home</h4>
-                <p>Lessons will take place in your kitchen. All you need is a smartphone or laptop.</p>
+                <h4>Learn remotely at home</h4>
+                <p>It doesn't matter in which part of the globe you are, because lessons will take place in your kitchen.
+                   All you need is a smartphone or laptop with a camera to follow the lessons.</p>
             </div>
             <div class="section-features-four">
                 <ion-icon name="time-outline"></ion-icon>
                 <h4>No hour limit</h4>
-                <p>Each lesson has no limit of hours, so book as many hours as you want. Each hour only costs £30.</p>
+                <p>Each sessions takes a minimum of one hour, but there is no limit on how many hours you want to learn. Each hour only costs £30.</p>
             </div>
+        </div>
+    </section>
+
+    <section class="section-chefs">
+        <div class="section-chef-grid">
+            <a href="#michelle_modal" rel="modal:open"><div class="chef-michelle"></div></a>
+            <a href="#pablo_modal" rel="modal:open"><div class="chef-pablo"></div></a>
+            <a href="#johan_modal" rel="modal:open"><div class="chef-johan"></div></a>
+            <a href="#dexter_modal" rel="modal:open"><div class="chef-dexter"></div></a>
+        </div>
+
+        <div id="michelle_modal" class="modal">
+            <p>Hi! I'm Michelle! I mainly specialize in African cuisine. If you 
+               want to learn the tradition or add a little twist to it, book a session with me! 
+            </p>
+        </div>
+
+        <div id="pablo_modal" class="modal">
+            <p>Hey there, I'm Pablo! I'm a wizard when it comes to spicy and flaming dishes,
+               contact me if you want to put on a show the next time you're at a BBQ! 
+            </p>
+        </div>
+
+        <div id="johan_modal" class="modal">
+            <p>Hello! My name is Johan and I specialize in fusion dishes. Do you want to 
+               impress guests that have a distinct palate? Then book a session! 
+            </p>
+        </div>
+
+        <div id="dexter_modal" class="modal">
+            <p>Hey, Dexter here! I'm a guru of Asian cuisine, let me know if you need tips
+               on preparing the perfect dumplings! 
+            </p>
         </div>
     </section>
 
@@ -61,13 +98,14 @@
         <div class="section-testimonials-grid">
             <div class="section-testimonials-stephan-meyers">
                 <blockquote>I'm currently studying Culinary Arts and the tips I got from Chef Mate have really helped me. 
-                            My dishes are tastier and my grades have improved.
+                            My dishes are tastier and my grades have improved. I'm pretty sure I'll continue using it not only through school, but also
+                            during my professional life.
                 </blockquote>
                 <cite><img src="assets/images/stephan_meyers.jpg" alt="Picture of Stephan Meyers"><span class="testimonial-names">Stephan Meyers</span></cite>
             </div>
             <div class="section-testimonials-yin-parker">
                 <blockquote>I absolutely love cooking with my partner and Chef Mate is a great way for both of us to learn new skills and tips. It makes
-                            our time in the kitchen even more fun! 
+                            our time in the kitchen even more fun! We'll be cooking with our friends soon as well :)
                 </blockquote>
                 <cite><img src="assets/images/yin_parker.jpg" alt="Picture of Yin Parker"><span class="testimonial-names">Yin Parker</span></cite>
             </div>
@@ -124,6 +162,7 @@
 
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

@@ -198,7 +198,15 @@ nav > ion-icon {
     font-weight: 300;
     text-transform: uppercase;
     margin-top: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.summary {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .section-features h4 {
@@ -208,8 +216,9 @@ nav > ion-icon {
     margin-bottom: 15px;
 }
 
-.section-features p {
+[class^="section-features-"] > p {
     font-weight: 300;
+    line-height: 1.5;
 }
 
 .section-features ion-icon {
@@ -225,6 +234,47 @@ nav > ion-icon {
 
 .section-features-four {
     margin-bottom: 40px;
+}
+
+/* --- Section Chefs --- */
+
+.section-chef-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    background-color: black;
+}
+
+[class^="chef-"] {
+    display: grid;
+    height: 170px;
+}
+
+.chef-michelle {
+    background-image: url(../images/chef_michelle.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.chef-pablo {
+    background-image: url(../images/chef_pablo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.chef-johan {
+    background-image: url(../images/chef_johan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.chef-dexter {
+    background-image: url(../images/chef_dexter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.modal > p {
+    line-height: 1.5;
 }
 
 /* --- Section Testimonials --- */
@@ -270,6 +320,7 @@ nav > ion-icon {
     font-weight: 200;
     text-align: left;
     font-style: italic;
+    line-height: 1.5;
 }
 
 blockquote::before {
@@ -360,7 +411,6 @@ form label {
 
 .form-btn-full:hover {
     background-color: #883600;
-    border-color: #883600;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -376,7 +426,7 @@ form label {
 
 .form-btn-ghost:hover {
     background-color: #883600;
-    border-color: #883600;
+    border-color: transparent;
     color: #fafafa;
     transition: 0.3s ease-in-out;
 }
@@ -414,7 +464,7 @@ footer {
     flex-flow: column wrap;
     justify-content: center;
     text-align: center;
-    flex: 0 1 1;
+    flex: 0 1 auto;
 }
 
 .social-links p {
@@ -473,7 +523,7 @@ footer {
         font-size: 120%;
     }
 
-    .section-features p {
+    [class^="section-features-"] > p {
         font-size: 110%;
     }
 
@@ -521,12 +571,12 @@ footer {
         justify-content: space-around;
         align-items: center;
         margin: 0 3% 0 auto;
-        width: 30%;
+        width: 50%;
     }
 
     .logo-white {
-        margin-left: 46%;
-    }
+        margin-left: 51.2px;
+    } 
 
     .nav-links {
         border-bottom: 2px solid transparent;
@@ -566,11 +616,19 @@ footer {
         margin-left: 5%;
         margin-top: 2%;
     }
+
+    .summary {
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
     
     .section-features-grid {
         display: inline-grid;
         gap: 20px;
-        grid-template-rows: 360px;
+        grid-template-rows: 470px;
         grid-template-columns: repeat(4, 222px);
         margin-top: 20px;
         margin-bottom: 8px;
@@ -608,13 +666,29 @@ footer {
         text-align: left;
     }
 
+    .section-chef-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+    
+    [class^="chef-"] {
+        display: grid;
+        height: 450px;
+        opacity: 0.5;
+    }
+
+    .chef-michelle:hover, .chef-pablo:hover, .chef-johan:hover, .chef-dexter:hover {
+        opacity: 1;
+        transition: 0.2s ease-in;
+    }
+
     .section-testimonials-grid {
         display: inline-grid;
         gap: 20px;
         grid-template-rows: 360px 360px;
         grid-template-columns: 450px 450px;
         justify-content: center;
-        margin: 10px 0 60px 0;
+        margin: 40px 0 60px 0;
     }
 
     .section-testimonials-stephan-meyers {
@@ -652,10 +726,16 @@ footer {
 }
 
 @media screen and (min-width: 1280px) {
+
+    .nav-links-container {
+        width: 40%;
+    }
+
     .logo-white {
-        margin-left: 57%;
+        margin-left: 64px;
     }
     .section-features-grid {
+        grid-template-rows: 400px;
         grid-template-columns: repeat(4, 250px);
         gap: 40px;
     }
@@ -671,12 +751,17 @@ footer {
 }
 
 @media screen and (min-width: 1824px) {
+
+    .nav-links-container {
+        width: 35%;
+    }
+
     .slogan-container h1 {
         font-size: 4rem;
     }
 
     .logo-white {
-        margin-left: 85%;
+        margin-left: 91.2px;
     }
 
     .section-features-one, .section-features-two, .section-features-three, .section-features-four {
@@ -684,6 +769,7 @@ footer {
     }
 
     .section-features-grid {
+        grid-template-rows: 380px;
         grid-template-columns: repeat(4, 300px);
         gap: 80px;
     }
