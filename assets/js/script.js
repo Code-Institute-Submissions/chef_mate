@@ -1,4 +1,5 @@
 /* JQuery Sticky Navigation*/
+/* http://imakewebthings.com/waypoints/ */
 
 $(document).ready(function() {
 
@@ -25,4 +26,3 @@ function menuFunction() {
     document.getElementById('js--menu-icon').classList.toggle('js--icon-display-none');
     document.getElementById('js--menu-icon-close').classList.toggle('js--icon-display-block');
 }
-

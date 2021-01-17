@@ -1,5 +1,6 @@
 /* --- General Settings --- */
 
+/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
