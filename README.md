@@ -2,7 +2,7 @@
 
 ChefMate is a service that allows its users to have cooking lessons with highly skilled chefs. The lessons conveniently take place at the user's kitchen, via a smartphone or laptop, so the service is remote and global.
 
-The goal of this fictional company is to have a webpage that provides clear and consise information regarding the service it provides.
+The goal of this fictional company is to have a webpage that provides clear and consise information regarding the service it provides, and also allow users to register and pay for their lessons.
 
 # UX
 
@@ -21,9 +21,13 @@ The company expects the website to:
 
 The website consists of one single page, containing 4 separate sections:
 * A header
-* A "features" section
-* A "testimonials" section
-* A "register" section
+* A "Our Services" section
+* A "Reviews" section
+* A "Register" section
+
+A PDF with the wireframes can be found [here] (assets/wireframes/wireframes.pdf)
+
+
 
 The header section has a very basic layout. It contains a 'hero' section with a short sentence that defines what the service is about.
 
