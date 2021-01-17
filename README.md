@@ -28,7 +28,7 @@ The website consists of one single page, containing 4 separate sections:
 A PDF with the wireframes can be found [here](assets/wireframes/wireframes.pdf). Please note that wireframes were provided only for mobile and desktop views. Tablets will take the mobile design if viewed as portrait, and desktop design if viewed as landscape.
 
 ## Features
-### 1- Header Section
+### 1 - Header Section
 
 The [header](assets/wireframes/page_1_header.png) section has a very basic layout. It contains a 'hero' image on the background with a very short sentence on top of it, defining what the service is about.
 
