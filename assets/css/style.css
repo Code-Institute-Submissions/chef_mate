@@ -1,6 +1,6 @@
 /* --- General Settings --- */
 
-/* Smooth Scrolling */
+/*Smooth Scrolling*/
 html {
     scroll-behavior: smooth;
 }
@@ -11,6 +11,7 @@ html {
     height: 150px;
     margin: -100px 0 0;
 }
+/*End of Smooth Scrolling*/
 
 h1, h2, h4, p, body {
     margin: 0;
@@ -21,6 +22,16 @@ body {
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: 400;
 }
+
+/* Remove blue background when buttons and links are clicked on mobile */
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/* Remove blue background when buttons and links are clicked on mobile */
 
 /* --- Header --- */
 header {
@@ -397,6 +408,7 @@ form label {
     width: 90px;
     border-radius: 200px;
     margin-right: 40px;
+    outline: none;
 }
 
 .form-btn-ghost {
@@ -407,6 +419,7 @@ form label {
     height: 40px;
     width: 110px;
     border-radius: 200px;
+    outline: none;
 }
 
 #name:focus, #email:focus, #password:focus {
@@ -715,6 +728,10 @@ footer {
         border-color: transparent;
         color: #fafafa;
         transition: 0.3s ease-in-out;
+    }
+
+    .form-btn-ghost:active {
+        background-color: #883600;
     }
 
 }
