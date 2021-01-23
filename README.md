@@ -131,7 +131,7 @@ For mobile, the following device was used: Asus Zenphone 5 (Chrome version 87.0.
 
 ## Deployment
 
-Website was deployed to GitHub (username [evendoom](https://github.com/evendoom/chef_mate)) via Visual Studio Code. 
+Website was deployed to GitHub (username [evendoom](https://github.com/evendoom/)) via Visual Studio Code. 
 
 Once deployed to GitHub, the following steps were taken to create a GitHub Page: 
 
