@@ -24,7 +24,7 @@ body {
 
 /* --- Header --- */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero_image.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/hero_image.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -66,11 +66,6 @@ header {
 .btn:link, .btn:visited {
     border: 1px solid #d35400;
     color: #fafafa;
-}
-
-.btn:hover {
-    background-color: #d35400;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .btn:active {
@@ -410,11 +405,6 @@ form label {
     margin-right: 40px;
 }
 
-.form-btn-full:hover {
-    background-color: #883600;
-    transition: background-color 0.2s ease-in-out;
-}
-
 .form-btn-ghost {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #d35400;
@@ -423,13 +413,6 @@ form label {
     height: 40px;
     width: 110px;
     border-radius: 200px;
-}
-
-.form-btn-ghost:hover {
-    background-color: #883600;
-    border-color: transparent;
-    color: #fafafa;
-    transition: 0.3s ease-in-out;
 }
 
 #name:focus, #email:focus, #password:focus {
@@ -528,6 +511,14 @@ footer {
         font-size: 110%;
     }
 
+    .section-chef-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    [class^="chef-"] {
+        height: 400px;
+    }
+
     form {
         width: 60%;
         font-size: 1.1rem;
@@ -595,6 +586,11 @@ footer {
         transition: 0.3s ease-in;
     }
 
+    .btn:hover {
+        background-color: #d35400;
+        transition: background-color 0.3s ease-in-out;
+    }
+
     .slogan-container {
         justify-content: flex-start;
         align-items: flex-start;
@@ -620,10 +616,6 @@ footer {
 
     .summary {
         font-size: 1.3rem;
-        text-align: center;
-        font-weight: 300;
-        margin-bottom: 20px;
-        line-height: 1.5;
     }
     
     .section-features-grid {
@@ -668,12 +660,10 @@ footer {
     }
 
     .section-chef-grid {
-        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     }
     
     [class^="chef-"] {
-        display: grid;
         height: 450px;
         opacity: 0.5;
     }
@@ -724,6 +714,18 @@ footer {
         box-shadow: -4px -5px 2px rgb(75, 74, 74);
     }
 
+    .form-btn-full:hover {
+        background-color: #883600;
+        transition: background-color 0.2s ease-in-out;
+    }
+    
+    .form-btn-ghost:hover {
+        background-color: #883600;
+        border-color: transparent;
+        color: #fafafa;
+        transition: 0.3s ease-in-out;
+    }
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -735,10 +737,18 @@ footer {
     .logo-white {
         margin-left: 64px;
     }
+
+    .summary {
+        padding: 0 100px;
+    }
     .section-features-grid {
         grid-template-rows: 400px;
         grid-template-columns: repeat(4, 250px);
         gap: 40px;
+    }
+
+    .section-chef-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .section-testimonials-grid {
@@ -749,6 +759,14 @@ footer {
     form {
         width: 50%;
     }
+}
+
+@media screen and (min-width: 1350px) {
+
+    .section-chef-grid {
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+
 }
 
 @media screen and (min-width: 1824px) {
@@ -765,6 +783,11 @@ footer {
         margin-left: 91.2px;
     }
 
+    .summary {
+        font-size: 1.4rem;
+        padding: 0 300px;
+    }
+
     .section-features-one, .section-features-two, .section-features-three, .section-features-four {
         padding: 0 20px;
     }
@@ -772,7 +795,7 @@ footer {
     .section-features-grid {
         grid-template-rows: 380px;
         grid-template-columns: repeat(4, 300px);
-        gap: 80px;
+        gap: 120px;
     }
 
     .section-testimonials-grid {

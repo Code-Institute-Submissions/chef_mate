@@ -2,7 +2,7 @@
 
 ChefMate is a service that allows its users to have cooking lessons with highly skilled chefs. The lessons conveniently take place at the user's kitchen, via a smartphone or laptop, so the service is remote and global.
 
-The goal of this fictional company is to have a webpage that provides clear and consise information regarding the service it provides, and also allow users to register and pay for their lessons.
+The goal of this fictional company is to have a webpage that provides clear and concise information regarding the service it provides, and also allow users to register and pay for their lessons.
 
 ## UX
 
@@ -10,7 +10,7 @@ The target audience for this service are individuals older than 20 that enjoy co
 
 As a user, I expect to:
 * Easily understand what this service offers.
-* Get a clear picture on how this service benefits me.
+* Get a clear picture of how this service benefits me.
 * Be able to quickly navigate between different sets of information.
 * Have no difficulties in registering with the service. 
 
@@ -30,7 +30,7 @@ A PDF with the wireframes can be found [here](assets/wireframes/wireframes.pdf).
 ## Features
 ### 1 - Header Section
 
-The [header](assets/wireframes/page_1_header.png) section has a very basic layout. It contains a 'hero' image on the background with a very short sentence on top of it, defining what the service is about.
+The [header](assets/wireframes/page_1_header.png) section has a simple layout. It contains a 'hero' image on the background with a very short sentence on top of it, defining what the service is about.
 
 The top part of the screen has a transparent navigation bar, which contains 2 elements:
 
@@ -54,11 +54,11 @@ The purpose of this section is to allow the viewers to have a clear idea of what
 
 ### 3 - "Reviews" Section
 
-This [part](assets/wireframes/page_3_reviews.png) of the website is divided into small blocks that provide quotes from individuals of different walks of life, meant to not only inform the user about the benefits of the service, but also allow the user to understand that the service is targetted to various groups of people: students, single people with busy careers, couples, etc.
+This [part](assets/wireframes/page_3_reviews.png) of the website is divided into small blocks that provide quotes from individuals of different walks of life, meant to not only inform the user about the benefits of the service, but also allow the user to understand that the service is targeted to various groups of people: students, individuals with busy careers, couples, etc.
 
 ### 4 - "Register" Section
 
-The final [part](assets/wireframes/page_4_register.png) of the webpage contains a simple form that allows the user to easily register with the service.
+The final [section](assets/wireframes/page_4_register.png) of the webpage contains a simple form that allows the user to easily register with the service.
 At the bottom, there's a footer providing links to social media platforms, in case the user is interested in more information.
 
 ### Features Left to Implement
@@ -81,7 +81,7 @@ The following languages were used in the development of this site: HTML, CSS and
 5 elements were tested:
 
 1. The navigation bar
-1. The clickable chef pictures on section 2
+1. The clickable chef pictures on 'Our Service' section
 1. The registration form
 1. Social Media Links
 1. The responsive elements of the webpage
@@ -92,11 +92,11 @@ Tested all navigation links on both mobile and desktop (including the black logo
 
 ### Clickable Chef Pictures
 
-Clicking on the chef pictures will display a modal containing information about the chef. I did encounter a bug where clicking on the same picture for the second time will display a modal with no information. More research needs to be done on this.
+Clicking on the chef pictures will display a [modal](assets/finished_project_screenshots/chef_picture.jpg) containing information about the chef. I did encounter a bug where clicking on the same picture for the second time will display a modal with no information. More research needs to be done on this.
 
 ### Registration Form
 
-Tested if it's possible to submit a form with incorrect information (invalid email address / password) - this is not possible, as expected.
+Tested if it's possible to submit a form with incorrect information (no name, invalid email address / password) - this is not possible, as [expected](assets/finished_project_screenshots/register_invalid_form.jpg).
 Tested the "Reset Form" button, it does clear the information typed in the form.
 
 ### Social Media Links
@@ -106,25 +106,41 @@ Social media links will navigate to the expected webpages, opening up on new tab
 ### Responsive Elements
 
 Viewed the page at different resolutions, media queries kick in as expected.
+The following resolutions were tested:
+
+* 360x740
+* 375x812
+* 414x736
+* 768x1024
+* 800x1280
+* 1024x768
+* 1280x800
+* 1350x900
+* 1920x1080
+
+### Software / Devices
+
+The website was tested on the following browsers, all displaying similar behaviour:
+
+* Mozilla Firefox (84.0.2)
+* Google Chrome (88.0.4324.104)
+* Microsoft Edge (88.0.705.50)
+
+For mobile, the following device was used: Asus Zenphone 5 (Chrome version 87.0.4280.141).
+
 
 ## Deployment
 
 Website was deployed to GitHub (username [evendoom](https://github.com/evendoom/chef_mate)) via Visual Studio Code. 
 
-There are multiple ways to deploy assets to GitHub with Visual Studio Code, but I used the integrated Terminal interface the application has.
+Once deployed to GitHub, the following steps were taken to create a GitHub Page: 
 
-If you want to deploy via Terminal, you'll need to:
-
-1. Download [Git](https://git-scm.com/downloads).
-1. On Visual Studio Code, open Terminal with Bash environment.
-1. CD onto the root folder of your project and run 'git init'. This will initialize git on your project.
-1. Run 'git add {source media}' to add files to your commit repository.
-1. Run 'git commit -m "{message}"' to commit your files.
-1. You'll then need to link your git repository to your account in GitHub. Run 'git remote add origin {your github repository}'.
-1. If you want to create a new branch, you can run 'git branch -M {branch name}'.
-1. If you're ready to deploy, run 'git push -u origin {branch name}'.
-
-To create a GitHub Page, go to your GitHub repository, select 'Settings' and then scroll down to GitHub Pages. Select the branch and access folder, and then click 'Save'.
+1. Access the GitHub [repository](https://github.com/evendoom/chef_mate) via an internet browser.
+1. Click 'Settings'.
+1. On the new page, scroll down to 'GitHub Pages'.
+1. Select branch (main).
+1. Select folder (root).
+1. Click 'Save'.
 
 ## Credits
 
@@ -138,7 +154,7 @@ The following articles / webpages / services were directly used or served as ins
 1. Tips on how to achieve smooth scrolling with just CSS were found at https://spigotdesign.com/smooth-scroll-offset-anchor-links-with-css/#smooth-scroll.
 1. For the modals, the following code was used: https://jquerymodal.com/.
 1. For the fixed navigation bar, the script can be found at http://imakewebthings.com/waypoints/.
-1. The book "Responsive Web Design with HTML5 and CSS: Develop future-proof responsive websites using the latest HTML5 and CSS techniques, 3rd Edition" written by Ben Frain provided a lot of CSS tips and tricks, inspiring me to use Flexbox and Grid, instead of the Bootstrap library.
-1. All names and text on this project is fictional and written by myself.
+1. The book "Responsive Web Design with HTML5 and CSS: Develop future-proof responsive websites using the latest HTML5 and CSS techniques, 3rd Edition" written by Ben Frain provided a lot of CSS tips and tricks, inspiring me to use Flexbox and Grid for page layouts.
+1. All names and text on this project are fictional and written by myself.
 
 *README.md written by Davide Correia, 2021*

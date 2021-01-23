@@ -14,24 +14,26 @@
 </head>
 <body>
 
+    <!-- intro section -->
     <header id="intro">
         <nav class="nav-container">
             <img src="assets/images/logo_white.png" alt="ChefMate Logo" class="logo-white">
-            <a class="img-container" href="#intro"><img src="assets/images/logo_black.png" alt="ChefMate Logo" class="logo-black"></a>
+            <a class="img-container" href="#intro" aria-label="Go to top of the page"><img src="assets/images/logo_black.png" alt="ChefMate Logo" class="logo-black"></a>
             <div class="nav-links-container" id="nav-links-container">
-                <a href="#section-features" class="nav-links">Our service</a>
-                <a href="#section-testimonials" class="nav-links">Reviews</a>
-                <a href="#section-register" class="nav-links">Register</a>
+                <a href="#section-features" class="nav-links" aria-label="Go to 'Our Service' section">Our service</a>
+                <a href="#section-testimonials" class="nav-links" aria-label="Go to 'Reviews' section">Reviews</a>
+                <a href="#section-register" class="nav-links" aria-label="Go to 'Register' section">Register</a>
             </div>
             <ion-icon name="menu" class="menu-icon" id="js--menu-icon" onclick="menuFunction()"></ion-icon>
             <ion-icon name="close" class="menu-icon js--icon-display-none" id="js--menu-icon-close" onclick="menuFunction()"></ion-icon>
         </nav>
         <div class="slogan-container">
             <h1>Enhance your culinary skills</h1>
-            <a class="btn" href="#section-features">Tell me more!</a>
+            <a class="btn" href="#section-features" aria-label="Go to 'Our Service' section">Tell me more!</a>
         </div>
     </header>
 
+    <!-- 'Our Service' section -->
     <section class="section-features js--section-features" id="section-features">
         <h2>Get cooking tips from skilled Chefs</h2>
         <p class="summary">Hi! We're ChefMate, a service that helps you to develop your cooking skills by learning with great chefs in the comfort of your own home!</p>
@@ -40,34 +42,41 @@
             <div class="section-features-one">
                 <ion-icon name="star"></ion-icon>
                 <h4>Get lessons from world recognized Chefs</h4>
-                <p>At ChefMate we make sure that all our Chefs are accredited and have valueable experience in high rated restaurants. 
-                   Their culinary input is highly prized in various parts of the globe.</p>
+                <p>At ChefMate we make sure that all our Chefs are accredited and have valuable experience in high rated restaurants. 
+                   Their culinary input is highly prized in various parts of the globe.
+                </p>
             </div>
             <div class="section-features-two">
                 <ion-icon name="restaurant"></ion-icon>
                 <h4>Vast amount of talent at Chef Mate</h4>
-                <p>Need tips on how to prepare sushi? Or how to prepare the perfect dough for pizza? No problem, our group of Chefs specialize in different styles of cuisine!</p>
+                <p>Need tips on how to prepare sushi? Or how to prepare the perfect dough for pizza?
+                   No problem, our group of Chefs specialize in different styles of cuisine!
+                </p>
             </div>
             <div class="section-features-three">
                 <ion-icon name="laptop-outline"></ion-icon>
                 <h4>Learn remotely at home</h4>
                 <p>It doesn't matter in which part of the globe you are, because lessons will take place in your kitchen.
-                   All you need is a smartphone or a laptop with a webcam so that you may interact in real time with your chef.</p>
+                   All you need is a smartphone or a laptop with a webcam so that you may interact in real time with your chef.
+                </p>
             </div>
             <div class="section-features-four">
                 <ion-icon name="time-outline"></ion-icon>
                 <h4>No hour limit</h4>
-                <p>Each live session takes a minimum of one hour, but there is no limit on how many hours you want to learn. Each hour only costs £30.</p>
+                <p>Each live session takes a minimum of one hour, but there is no limit on how many hours you want to learn.
+                   Each hour only costs £30.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="section-chefs">
+    <!-- Chef modals -->
+    <aside class="section-chefs">
         <div class="section-chef-grid">
-            <a href="#michelle_modal" rel="modal:open"><div class="chef-michelle"></div></a>
-            <a href="#pablo_modal" rel="modal:open"><div class="chef-pablo"></div></a>
-            <a href="#johan_modal" rel="modal:open"><div class="chef-johan"></div></a>
-            <a href="#dexter_modal" rel="modal:open"><div class="chef-dexter"></div></a>
+            <a href="#michelle_modal" rel="modal:open" aria-label="See more information about Chef Michelle"><div class="chef-michelle"></div></a>
+            <a href="#pablo_modal" rel="modal:open" aria-label="See more information about Chef Pablo"><div class="chef-pablo"></div></a>
+            <a href="#johan_modal" rel="modal:open" aria-label="See more information about Chef Johan"><div class="chef-johan"></div></a>
+            <a href="#dexter_modal" rel="modal:open" aria-label="See more information about Chef Dexter"><div class="chef-dexter"></div></a>
         </div>
 
         <div id="michelle_modal" class="modal">
@@ -93,8 +102,9 @@
                on preparing the perfect dumplings! 
             </p>
         </div>
-    </section>
+    </aside>
 
+    <!-- 'Reviews' section -->
     <section class="section-testimonials" id="section-testimonials">
         <h2>What our customers are saying</h2>
         <hr>
@@ -113,8 +123,8 @@
                 <cite><img src="assets/images/yin_parker.jpg" alt="Picture of Yin Parker"><span class="testimonial-names">Yin Parker</span></cite>
             </div>
             <div class="section-testimonials-tanya-stevens">
-                <blockquote>I really enjoy preparing nutricious meals, but the reality is I have a very time-consuming job, so I can't spend too much time
-                            in the kitchen. However, thanks to these amazing chefs, I've learned how to prepare quick, yet delicious and nutricious meals!
+                <blockquote>I really enjoy preparing nutritious meals, but the reality is I have a very time-consuming job, so I can't spend too much time
+                            in the kitchen. However, thanks to these amazing chefs, I've learned how to prepare quick, yet delicious and nourishing meals!
                 </blockquote>
                 <cite><img src="assets/images/tanya_stevens.jpg" alt="Picture of Tanya Stevens"><span class="testimonial-names">Tanya Stevens</span></cite>
             </div>
@@ -127,6 +137,7 @@
         </div>
     </section>
 
+    <!-- 'Register' section -->
     <section class="section-register" id="section-register">
 
         <h2>Start your lessons today!</h2>
@@ -148,6 +159,7 @@
 
     </section>
 
+    <!-- footer -->
     <footer>
         <div class="copyright">
             <p>ChefMate &#169; 2021</p>
@@ -155,10 +167,10 @@
         <div class="social-links">
             <p>Find us on:</p>
             <div class="social-links-a">
-                <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="https://www.pinterest.com" target="_blank"><ion-icon name="logo-pinterest"></ion-icon></a>
-                <a href="https://www.youtube.com" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Open our Facebook page in a new window"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Open our Twitter page in a new window"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.pinterest.com" target="_blank" aria-label="Open our Pinterest page in a new window"><ion-icon name="logo-pinterest"></ion-icon></a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="Open our YouTube page in a new window"><ion-icon name="logo-youtube"></ion-icon></a>
             </div>
         </div>
     </footer>
