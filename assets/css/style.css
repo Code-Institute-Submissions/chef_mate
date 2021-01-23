@@ -429,6 +429,7 @@ form label {
 .form-btn-ghost:active {
     color: #fafafa;
     background-color: #883600;
+    border-color: transparent;
 }
 
 #name:focus, #email:focus, #password:focus {
@@ -737,10 +738,6 @@ footer {
         border-color: transparent;
         color: #fafafa;
         transition: 0.3s ease-in-out;
-    }
-
-    .form-btn-ghost:active {
-        background-color: #883600;
     }
 
 }
