@@ -422,6 +422,15 @@ form label {
     outline: none;
 }
 
+.form-btn-full:active {
+    background-color: #883600;
+}
+
+.form-btn-ghost:active {
+    color: #fafafa;
+    background-color: #883600;
+}
+
 #name:focus, #email:focus, #password:focus {
     border-color: #d35400;
 }
